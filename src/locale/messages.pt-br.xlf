@@ -1,3 +1,70 @@
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="pt-br">
-  <file original="ng.template" id="ngi18n"/>
+  <file original="ng.template" id="ngi18n">
+    <unit id="6339174259217119726">
+      <segment state="initial">
+        <source>Welcome back :)</source>
+        <target>Bem vindo de volta :)</target>
+      </segment>
+    </unit>
+    <unit id="203827529942340818">
+      <segment state="initial">
+        <source>Enter your email</source>
+        <target>Digite seu e-mail</target>
+      </segment>
+    </unit>
+    <unit id="2772023564304193657">
+      <segment state="initial">
+        <source>Enter your password</source>
+        <target>Digite sua senha</target>
+      </segment>
+    </unit>
+    <unit id="2727496946419791472">
+      <segment state="initial">
+        <source>Forgot password?</source>
+        <target>Esqueci a senha</target>
+      </segment>
+    </unit>
+    <unit id="931252989873527145">
+      <segment state="initial">
+        <source>Remember me</source>
+        <target>Manter conectado</target>
+      </segment>
+    </unit>
+    <unit id="6663783128602596673">
+      <segment state="initial">
+        <source> Sign in </source>
+        <target> Entrar </target>
+      </segment>
+    </unit>
+    <unit id="2308975396733519902">
+      <segment state="initial">
+        <source>Create an account</source>
+        <target>Criar uma conta</target>
+      </segment>
+    </unit>
+    <unit id="1335835374415417489">
+      <segment state="initial">
+        <source>Max 40 characters</source>
+        <target>Máximo 40 caracteres</target>
+      </segment>
+    </unit>
+    <unit id="3108147958666148254">
+      <segment state="initial">
+        <source>your_email@email.com</source>
+        <target>seu_e-mail@email.com</target>
+      </segment>
+    </unit>
+    <unit id="4828087751373130337">
+      <segment state="initial">
+        <source>Max 20 characters</source>
+        <target>Máximo 20 caracteres</target>
+      </segment>
+    </unit>
+    <unit id="5696395102656653262">
+      <segment state="initial">
+        <source>your password</source>
+        <target>sua senha</target>
+      </segment>
+    </unit>
+  </file>
 </xliff>

@@ -1,4 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
-  <file id="ngi18n" original="ng.template"/>
+  <file id="ngi18n" original="ng.template">
+    <unit id="203827529942340818">
+      <segment>
+        <source>Enter your email</source>
+      </segment>
+    </unit>
+    <unit id="2308975396733519902">
+      <segment>
+        <source>Create an account</source>
+      </segment>
+    </unit>
+    <unit id="2727496946419791472">
+      <segment>
+        <source>Forgot password?</source>
+      </segment>
+    </unit>
+    <unit id="2772023564304193657">
+      <segment>
+        <source>Enter your password</source>
+      </segment>
+    </unit>
+    <unit id="6339174259217119726">
+      <segment>
+        <source>Welcome back :)</source>
+      </segment>
+    </unit>
+    <unit id="6663783128602596673">
+      <segment>
+        <source> Sign in </source>
+      </segment>
+    </unit>
+    <unit id="931252989873527145">
+      <segment>
+        <source>Remember me</source>
+      </segment>
+    </unit>
+    <unit id="1335835374415417489">
+      <segment>
+        <source>Max 40 characters</source>
+      </segment>
+    </unit>
+    <unit id="3108147958666148254">
+      <segment>
+        <source>your_email@email.com</source>
+      </segment>
+    </unit>
+    <unit id="4828087751373130337">
+      <segment>
+        <source>Max 20 characters</source>
+      </segment>
+    </unit>
+    <unit id="5696395102656653262">
+      <segment>
+        <source>your password</source>
+      </segment>
+    </unit>
+  </file>
 </xliff>
