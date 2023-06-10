@@ -47,7 +47,13 @@
       <mat-checkbox formControlName="remember" i18n>Remember me</mat-checkbox>
     </div>
 
-    <button mat-raised-button color="primary" [disabled]="form.invalid" i18n>
+    <button
+      mat-raised-button
+      color="primary"
+      [disabled]="form.invalid"
+      test-id="signin-button"
+      i18n
+    >
       Sign in
     </button>
   </form>
