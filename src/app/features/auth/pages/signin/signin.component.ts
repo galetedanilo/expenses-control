@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { AsyncPipe, NgIf } from '@angular/common';
 import {
   FormsModule,
   ReactiveFormsModule,
@@ -8,12 +8,15 @@ import {
 } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
-
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+import { AuthenticationFacade } from '../../facades/authentication.facade';
+import { SignIn } from '../../interfaces/signin.interface';
 
 @Component({
   selector: 'app-signin',
@@ -24,10 +27,12 @@ import { MatInputModule } from '@angular/material/input';
     MatIconModule,
     MatInputModule,
     MatCheckboxModule,
+    MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
     NgIf,
     RouterLink,
+    AsyncPipe,
   ],
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.scss'],
@@ -35,8 +40,11 @@ import { MatInputModule } from '@angular/material/input';
 })
 export default class SigninComponent {
   private bd = inject(FormBuilder);
+  private facade = inject(AuthenticationFacade);
 
   protected hide = true;
+
+  isLoading = this.facade.loading$;
 
   form = this.bd.group({
     email: ['', [Validators.required, Validators.email]],
@@ -44,5 +52,7 @@ export default class SigninComponent {
     remember: false,
   });
 
-  onSubmit(): void {}
+  onSubmit(): void {
+    this.facade.signIn(this.form.value as SignIn);
+  }
 }
