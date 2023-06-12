@@ -174,4 +174,5 @@ describe('SigninComponent', () => {
   function getLoginLoaderButton(): HTMLButtonElement {
     return page.querySelector('[test-id=loading-button]');
   }
+  
 });

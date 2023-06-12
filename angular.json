@@ -6,7 +6,7 @@
     "expenses-control": {
       "i18n": {
         "sourceLocale": "en-US",
-        "locales": { "pt-BR": "src/locale/messages.pt-br.xlf" }
+        "locales": { "pt": "src/locale/messages.pt.xlf" }
       },
       "projectType": "application",
       "schematics": {
@@ -28,7 +28,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": ["pt-BR"],
+            "localize": ["pt"],
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -88,7 +88,7 @@
             "format": "xlf2",
             "outputPath": "src/locale",
             "targetFiles": [
-              "messages.pt-br.xlf"
+              "messages.pt.xlf"
             ]
           }
         }

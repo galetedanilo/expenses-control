@@ -56,5 +56,15 @@
         <source>your password</source>
       </segment>
     </unit>
+    <unit id="4317027234970021182">
+      <segment>
+        <source>Invalid username or password</source>
+      </segment>
+    </unit>
+    <unit id="7819314041543176992">
+      <segment>
+        <source>Close</source>
+      </segment>
+    </unit>
   </file>
 </xliff>
