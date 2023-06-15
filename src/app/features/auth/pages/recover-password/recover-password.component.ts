@@ -1,9 +1,9 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { AsyncPipe, NgIf } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import {
+  FormBuilder,
   FormsModule,
   ReactiveFormsModule,
-  FormBuilder,
   Validators,
 } from '@angular/forms';
 import { RouterLink } from '@angular/router';
@@ -16,43 +16,37 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AuthFacade } from '../../facades/auth.facade';
-import { SignIn } from '../../interfaces/auth.interface';
 
 @Component({
-  selector: 'app-signin',
   standalone: true,
   imports: [
+    AsyncPipe,
+    FormsModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatCheckboxModule,
     MatProgressSpinnerModule,
-    FormsModule,
-    ReactiveFormsModule,
     NgIf,
+    ReactiveFormsModule,
     RouterLink,
-    AsyncPipe,
   ],
-  templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss'],
+  templateUrl: './recover-password.component.html',
+  styleUrls: ['./recover-password.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class SigninComponent {
+export default class RecoverPasswordComponent {
   private _bd = inject(FormBuilder);
   private _facade = inject(AuthFacade);
 
-  protected hide = true;
-
-  isLoading = this._facade.loading$;
+  protected loading$ = this._facade.loading$
 
   form = this._bd.group({
     email: ['', [Validators.required, Validators.email]],
-    password: ['', [Validators.required, Validators.minLength(8)]],
-    remember: false,
   });
 
   onSubmit(): void {
-    this._facade.signIn(this.form.value as SignIn);
+    this._facade.recoverPassword(this.form.controls.email.value as string);
   }
 }

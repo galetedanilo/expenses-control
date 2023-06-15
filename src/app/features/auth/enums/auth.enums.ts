@@ -1,4 +1,4 @@
 export enum AUTH_ERRORS {
-  USER_DELETED = "auth/user-not-found",
-  INVALID_PASSWORD = "auth/wrong-password"
+  USER_NOT_FOUND = "auth/user-not-found",
+  WRONG_PASSWORD = "auth/wrong-password"
 }

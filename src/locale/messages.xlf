@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
   <file id="ngi18n" original="ng.template">
+    <unit id="1335835374415417489">
+      <segment>
+        <source>Max 40 characters</source>
+      </segment>
+    </unit>
     <unit id="203827529942340818">
       <segment>
         <source>Enter your email</source>
@@ -21,26 +26,6 @@
         <source>Enter your password</source>
       </segment>
     </unit>
-    <unit id="6339174259217119726">
-      <segment>
-        <source>Welcome back :)</source>
-      </segment>
-    </unit>
-    <unit id="6663783128602596673">
-      <segment>
-        <source> Sign in </source>
-      </segment>
-    </unit>
-    <unit id="931252989873527145">
-      <segment>
-        <source>Remember me</source>
-      </segment>
-    </unit>
-    <unit id="1335835374415417489">
-      <segment>
-        <source>Max 40 characters</source>
-      </segment>
-    </unit>
     <unit id="3108147958666148254">
       <segment>
         <source>your_email@email.com</source>
@@ -51,19 +36,64 @@
         <source>Max 20 characters</source>
       </segment>
     </unit>
+    <unit id="5189818166240080724">
+      <segment>
+        <source>Recover password</source>
+      </segment>
+    </unit>
+    <unit id="5250569740790418380">
+      <segment>
+        <source>User not found</source>
+      </segment>
+    </unit>
+    <unit id="5478121364779850827">
+      <segment>
+        <source> Reset </source>
+      </segment>
+    </unit>
+    <unit id="5577896459957899803">
+      <segment>
+        <source>Log in here</source>
+      </segment>
+    </unit>
     <unit id="5696395102656653262">
       <segment>
         <source>your password</source>
       </segment>
     </unit>
-    <unit id="4317027234970021182">
+    <unit id="6286035857631834761">
       <segment>
-        <source>Invalid username or password</source>
+        <source>Check your email for a link to reset your password. If it doesn&apos;t appear within a few minutes, check your spam folder.</source>
+      </segment>
+    </unit>
+    <unit id="6314278975578272694">
+      <segment>
+        <source>Wrong password</source>
+      </segment>
+    </unit>
+    <unit id="6339174259217119726">
+      <segment>
+        <source>Welcome back :)</source>
+      </segment>
+    </unit>
+    <unit id="6663783128602596673">
+      <segment>
+        <source> Sign in </source>
       </segment>
     </unit>
     <unit id="7819314041543176992">
       <segment>
         <source>Close</source>
+      </segment>
+    </unit>
+    <unit id="8027348393520865482">
+      <segment>
+        <source>Enter your email address</source>
+      </segment>
+    </unit>
+    <unit id="931252989873527145">
+      <segment>
+        <source>Remember me</source>
       </segment>
     </unit>
   </file>

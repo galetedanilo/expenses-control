@@ -6,7 +6,7 @@ import { Location } from '@angular/common';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BlanckComponent } from '../../../../shared/mockes/blanck/blanck.component';
-import { AuthenticationFacade } from '../../facades/authentication.facade';
+import { AuthFacade } from '../../facades/auth.facade';
 import { of } from 'rxjs';
 
 describe('SigninComponent', () => {
@@ -15,7 +15,7 @@ describe('SigninComponent', () => {
   let page: any;
   let location: Location;
 
-  let authenticationFacadeSpy: AuthenticationFacade;
+  let authFacadeSpy: AuthFacade;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -28,7 +28,7 @@ describe('SigninComponent', () => {
         ]),
       ],
       providers: [
-        { provide: AuthenticationFacade, useValue: AuthenticationFacade },
+        { provide: AuthFacade, useValue: AuthFacade },
       ],
       schemas: [NO_ERRORS_SCHEMA],
     })
@@ -41,9 +41,9 @@ describe('SigninComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SigninComponent);
     
-    authenticationFacadeSpy = TestBed.inject(
-      AuthenticationFacade
-    ) as jest.Mocked<AuthenticationFacade>;
+    authFacadeSpy = TestBed.inject(
+      AuthFacade
+    ) as jest.Mocked<AuthFacade>;
     location = TestBed.inject(Location);
 
     component = fixture.componentInstance;
@@ -98,7 +98,7 @@ describe('SigninComponent', () => {
   describe('login flow', () => {
     describe('when user click in login button', () => {
       beforeEach(() => {
-        authenticationFacadeSpy.signIn = jest.fn().mockImplementation();
+        authFacadeSpy.signIn = jest.fn().mockImplementation();
 
         setEmail('valid@email.com');
         setPassword('password');
@@ -108,7 +108,7 @@ describe('SigninComponent', () => {
 
         fixture.detectChanges();
 
-        expect(authenticationFacadeSpy.signIn).toBeCalled();
+        expect(authFacadeSpy.signIn).toBeCalled();
       });
 
       it('should hide loggin button', () => {
